@@ -1,0 +1,485 @@
+.wd3_unsupported {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/common/unsupported.xml#unsupported');
+}
+
+/* For tables with the "border" attribute set to "0" */
+table[border="0"], 
+table[border="0"] > tr > td, table[border="0"] > tr > th, 
+table[border="0"] > tbody > tr > td, table[border="0"] > tbody > tr > th, 
+table[border="0"] > thead > tr > td, table[border="0"] > thead > tr > th, 
+table[border="0"] > tfoot > tr > td, table[border="0"] > tfoot > tr > th {
+	border: #d3d3d3 1px dotted ;
+}
+
+/* For tables with no "border" attribute set */
+table:not([border]), 
+table:not([border]) > tr > td, table:not([border]) > tr > th,
+table:not([border]) > tbody > tr > td, table:not([border]) > tbody > tr > th,
+table:not([border]) > thead > tr > td, table:not([border]) > thead > tr > th,
+table:not([border]) > tfoot > tr > td, table:not([border]) > tfoot > tr > th {
+	border: #d3d3d3 1px dotted ;
+}
+
+input[type="hidden"] {
+	display: inline;
+	min-height: 16px; margin-left: 2px; margin-top: 2px;
+	width:20px;
+	height:20px;
+	border:1px dashed #FF0000 ;
+	background-image: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/html/img/hiddenfield.gif');
+	background-repeat: no-repeat;
+}
+
+input[type="hidden"]:after {
+	padding-left: 20px;
+	content: "" ;
+}
+
+form {
+	border: 1px dashed #FF0000;
+}
+
+/*PR#4171 for broken image icon*/
+img {
+  -moz-force-broken-image-icon: 1;
+}
+
+/* for an anchor provide some styling */
+/*TODO get :not([\_moz_anonclass]) working as well*/
+/*a:not([\_moz_anonclass][href])[name] {*/
+a:not([href])[name] {
+  min-height: 16px; margin-left: 2px; margin-top: 2px;
+  padding-left: 20px; 
+  background-image: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/html/img/anchor.gif');
+  background-repeat: no-repeat; 
+  background-position: top left;
+  border-bottom: 1px dashed blue;
+}
+
+wd3_cdata {
+    max-height: 16px;
+    max-width: 16px;
+    margin-left: 2px; 
+    margin-top: 2px;
+    padding-left: 16px; 
+    background-image: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/html/img/cdatasection.gif');
+    background-repeat: no-repeat; 
+    background-position: top left;
+}
+
+wd3_pi {
+    max-height: 16px;
+    max-width: 16px;
+    margin-left: 2px; 
+    margin-top: 2px;
+    padding-left: 16px; 
+    background-image: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/html/img/proinst.gif');
+    background-repeat: no-repeat; 
+    background-position: top left;
+}
+
+wd3_script {
+    max-height: 16px;
+    max-width: 16px;
+    margin-left: 2px; 
+    margin-top: 2px;
+    padding-left: 16px; 
+    background-image: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/html/img/script.gif');
+    background-repeat: no-repeat; 
+    background-position: top left;
+}
+
+/* Since we can't use the real disabled attr, we can at least
+   make it look like the elements are disabled in the design view*/
+input[alias_wd3_disabled],
+textarea[alias_wd3_disabled],
+option[alias_wd3_disabled],
+optgroup[alias_wd3_disabled],
+select[alias_wd3_disabled] {
+	color: GrayText;
+  	background-color: ThreeDFace;
+  	cursor: inherit;
+}
+
+option[alias_wd3_disabled],
+optgroup[alias_wd3_disabled] {
+  background-color: transparent;
+}
+
+input[type="radio"][alias_wd3_disabled],
+input[type="radio"][alias_wd3_disabled]:active,
+input[type="radio"][alias_wd3_disabled]:hover,
+input[type="radio"][alias_wd3_disabled]:hover:active,
+input[type="checkbox"][alias_wd3_disabled],
+input[type="checkbox"][alias_wd3_disabled]:active,
+input[type="checkbox"][alias_wd3_disabled]:hover,
+input[type="checkbox"][alias_wd3_disabled]:hover:active {
+  padding: 1px;
+  border: 1px inset ThreeDShadow ! important;
+  /* same as above, but !important */
+  color: GrayText ! important;
+  background-color: ThreeDFace ! important;
+  cursor: inherit; 
+}
+
+button[disabled]:active, button[alias_wd3_disabled],
+input[type="reset"][alias_wd3_disabled]:active,
+input[type="reset"][alias_wd3_disabled],
+input[type="button"][alias_wd3_disabled]:active,
+input[type="button"][alias_wd3_disabled],
+select[alias_wd3_disabled] > input[type="button"],
+select[alias_wd3_disabled] > input[type="button"]:active,
+input[type="submit"][alias_wd3_disabled]:active,
+input[type="submit"][alias_wd3_disabled] {
+  /* The sum of border-top, border-bottom, padding-top, padding-bottom
+     must be the same here and for text inputs */
+  padding: 1px 7px 1px 7px;
+  border: 1px outset ButtonShadow;
+  color: GrayText;
+  cursor: inherit; 
+}
+
+.wd3_factionlistener {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/core/core.xml#actionListener');
+}
+	
+.wd3_fattribute {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/core/core.xml#attribute');
+}
+
+.wd3_fconvertdatetime {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/core/core.xml#convertDateTime');
+}
+
+.wd3_fconverter {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/core/core.xml#converter');
+}
+
+.wd3_fconvertnumber {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/core/core.xml#convertNumber');
+}
+
+.wd3_ffacet {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/core/core.xml#facet');
+}
+
+.wd3_floadbundle {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/core/core.xml#loadBundle');
+}
+
+.wd3_fparam {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/core/core.xml#param');
+}
+
+.wd3_fselectitem {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/core/core.xml#selectItem');
+}
+
+.wd3_fselectitems {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/core/core.xml#selectItems');
+}
+
+.wd3_fsubview {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/core/core.xml#subview');
+}
+
+.wd3_fvalidatedoublerange {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/core/core.xml#validateDoubleRange');
+}
+
+.wd3_fvalidatelength {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/core/core.xml#validateLength');
+}
+
+.wd3_fvalidatelongrange {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/core/core.xml#validateLongRange');
+}
+
+.wd3_fvalidator {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/core/core.xml#validator');
+}
+
+.wd3_fvaluechangelistener {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/core/core.xml#valueChangeListener');
+}
+
+.wd3_fverbatim {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/core/core.xml#verbatim');
+}
+
+.wd3_fview {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/core/core.xml#view');
+}
+.wd3_hcolumn {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#column');
+}
+
+.wd3_hcommandbutton {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#commandButton');
+}
+	
+.wd3_hcommandlink {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#commandLink');
+}
+
+.wd3_hdatatable {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#dataTable');
+}
+
+.wd3_hform {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#form');
+}
+
+.wd3_hgraphicimage {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#graphicImage');
+}
+
+.wd3_hinputhidden {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#inputHidden');
+}
+
+.wd3_hinputtext {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#inputText');
+}
+
+.wd3_hinputsecret {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#inputSecret');
+}
+
+.wd3_hinputtextarea {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#inputTextarea');
+}
+
+.wd3_hmessage {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#message');
+}
+
+.wd3_houtputformat {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#outputFormat');
+}
+
+.wd3_houtputlabel {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#outputLabel');
+}
+
+.wd3_houtputlink {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#outputLink');
+}
+
+.wd3_houtputtext {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#outputText');
+}
+
+.wd3_hpanelgrid {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#panelGrid');
+}
+
+.wd3_hpanelgroup {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#panelGroup');
+}
+
+.wd3_hselectbooleancheckbox {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#selectBooleanCheckbox');
+}
+
+.wd3_hselectmanycheckbox {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#selectManyCheckbox');
+}
+
+.wd3_hselectmanylistbox {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#selectManyListbox');
+}
+
+.wd3_hselectmanymenu {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#selectManyMenu');
+}
+
+.wd3_hselectonelistbox {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#selectOneListbox');
+}
+
+.wd3_hselectonemenu {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#selectOneMenu');
+}
+
+.wd3_hselectoneradio {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsf/html/html.xml#selectOneRadio');
+}
+.wd3_jspattribute {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsp/jsp.xml#attribute');
+}
+   			
+.wd3_jspdeclaration {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsp/jsp.xml#declaration');
+}
+   			
+.wd3_jspdirectiveinclude {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsp/jsp.xml#directive.include');
+}
+
+.wd3_jspdirectivepage {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsp/jsp.xml#directive.page');
+}
+
+.wd3_jspdirectivetaglib {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsp/jsp.xml#directive.taglib');
+}
+
+.wd3_jspexpression {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsp/jsp.xml#expression');
+}
+
+.wd3_jspfallback {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsp/jsp.xml#fallback');
+}
+
+.wd3_jspforward {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsp/jsp.xml#forward');
+}
+
+.wd3_jspgetproperty {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsp/jsp.xml#getproperty');
+}
+
+.wd3_jspinclude {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsp/jsp.xml#include');
+}
+
+.wd3_jspparam {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsp/jsp.xml#param');
+}
+
+.wd3_jspparams {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsp/jsp.xml#params');
+}
+
+.wd3_jspplugin {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsp/jsp.xml#plugin');
+}
+
+.wd3_jsproot {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsp/jsp.xml#root');
+}
+
+.wd3_jspscriptlet {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsp/jsp.xml#scriptlet');
+}
+   			
+.wd3_jspsetproperty {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsp/jsp.xml#setproperty');
+}
+
+.wd3_jsptext {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsp/jsp.xml#text');
+}
+
+.wd3_jspusebean {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/jsp/jsp.xml#usebean');
+}
+.wd3_htmlbase {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#base');
+}
+
+.wd3_htmlbutton {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#button');
+}
+
+.wd3_htmlcancel {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#cancel');
+}
+
+.wd3_htmlcheckbox {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#checkbox');
+}
+
+.wd3_htmlerrors {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#errors');
+}
+
+.wd3_htmlfile {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#file');
+}
+
+.wd3_htmlform {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#form');
+}
+
+.wd3_htmlframe {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#frame');
+}
+
+.wd3_htmlhidden {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#hidden');
+}
+
+.wd3_htmlimage {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#image');
+}
+
+.wd3_htmlimg {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#img');
+}
+
+.wd3_htmljavascript {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#javascript');
+}
+
+.wd3_htmllink {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#link');
+}
+
+.wd3_htmlmessages {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#messages');
+}
+
+.wd3_htmlmultibox {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#multibox');
+}
+
+.wd3_htmloption {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#option');
+}
+
+.wd3_htmloptions {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#options');
+}
+
+.wd3_htmloptionscollection {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#optionsCollection');
+}
+
+.wd3_htmlpassword {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#password');
+}
+
+.wd3_htmlradio {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#radio');
+}
+
+.wd3_htmlreset {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#reset');
+}
+
+.wd3_htmlrewrite {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#rewrite');
+}
+
+.wd3_htmlselect {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#select');
+}
+
+.wd3_htmlsubmit {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#submit');
+}
+
+.wd3_htmltext {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#text');
+}
+
+.wd3_htmltextarea {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#textarea');
+}
+
+.wd3_htmlxhtml {
+	-moz-binding: url('file:/F:/myeclipse6.5/myeclipse/eclipse/plugins/com.genuitec.eclipse.webdesigner3_6.5.0.zmyeclipse650200806//wd3/ext/struts/html/html.xml#xhtml');
+}

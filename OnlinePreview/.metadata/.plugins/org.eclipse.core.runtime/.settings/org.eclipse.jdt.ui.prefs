@@ -1,0 +1,23 @@
+#Mon Jul 27 10:07:25 CST 2015
+sourceHoverBackgroundColor=255,255,225
+spelling_locale=en_GB
+org.eclipse.jdt.ui.overrideannotation=true
+spelling_locale_initialized=true
+org.eclipse.jdt.ui.gettersetter.use.is=true
+useAnnotationsPrefPage=true
+eclipse.preferences.version=1
+org.eclipse.jface.textfont=1|Courier New|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Courier New;
+tabWidthPropagated=true
+org.eclipse.jdt.ui.editor.tab.width=
+org.eclipse.jdt.ui.exception.name=e
+fontPropagated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8"?><templates/>
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+proposalOrderMigrated=true
+org.eclipse.jdt.ui.ondemandthreshold=99
+org.eclipse.jdt.ui.formatterprofiles.version=11
+useQuickDiffPrefPage=true
+org.eclipse.jdt.ui.staticondemandthreshold=99
+org.eclipse.jdt.ui.importorder=java;javax;org;com;
+org.eclipse.jdt.ui.ignorelowercasenames=true
+org.eclipse.jdt.ui.text.code_templates_migrated=true

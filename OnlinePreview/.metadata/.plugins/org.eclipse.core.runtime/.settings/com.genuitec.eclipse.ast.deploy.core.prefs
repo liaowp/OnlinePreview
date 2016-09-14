@@ -1,0 +1,12 @@
+#Mon Jul 27 10:19:46 CST 2015
+tomcat6Server.Test.isUptoDate=true
+tomcat6Server.Test.deploymentPath=D\:\\Tomcat 6.0\\webapps\\Test
+tomcat6Server.Test.isExploded=true
+tomcat6Server.Test.earProjectName=
+tomcat6Server.Test.type=WebDeployment
+tomcat6Server.Test.contextRoot=/Test
+tomcat6Server.Test.isDeployed=true
+tomcat6Server.Test.deployIsOverProject=false
+tomcat6Server.Test.shouldBackup=false
+eclipse.preferences.version=1
+tomcat6Server.Test.shouldOverwrite=false

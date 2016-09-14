@@ -1,0 +1,18 @@
+<Beans>
+    <Bean Class="com.genuitec.eclipse.sqlexplorer.utils.ConnectionProfile">
+        <activate>false</activate>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>4696db8f:14ecd35c0e0:-7fde</string>
+        </driverIdentifier>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>4696db8f:14ecd35c0e0:-7fdd</string>
+        </identifier>
+        <name>MyEclipse Derby</name>
+        <password encryption="true">gFOjO/OmrJ8m4/rtM2cMIw==</password>
+        <promptForPassword>false</promptForPassword>
+        <schema Indexed="true"/>
+        <schemaDisplayPolicy>0</schemaDisplayPolicy>
+        <url>jdbc:derby://localhost:1527/myeclipse</url>
+        <userName>classiccars</userName>
+    </Bean>
+</Beans>
